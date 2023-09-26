@@ -1,4 +1,17 @@
-h3 {
-	font-size: 30px;
+body{
+	background-color: #e0e0eb;
+}
+h1 {
+	font-size: 35px;
+	margin-left: 50px;
 	text-align: center;
+}
+p {
+	font-size: 20px;
+	text-align: center;
+}
+.img1{
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
 }
