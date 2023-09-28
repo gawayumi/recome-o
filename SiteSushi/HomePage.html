@@ -1,7 +1,9 @@
 <html>
 <head>
-    <title> SITE DO SUSHI </title>
+    <link rel="icon" type="image/x-icon" href="LogoSite.png"> <!-- ícone na guia -->
+    <title> SITE DO SUSHI </title> <!-- título na guia -->
 </head>
+
 <body>
     <style>
         header{ /* FUNDO DO TÍTULO */
@@ -36,18 +38,18 @@
             display: inline-block;
             width: 130px;
         }
-        .menu li a{
+        .menu li a{ /* LINK DOS ITENS */
             color: white;
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .menu li a:hover{
+        .menu li a:hover{ /* ITEM DO MENU QUANDO PASSA MOUSE EM CIMA */
             background:#333;
             color:#fff;
-            -moz-box-shadow:0 3px 10px 0 #CCC;
-            text-shadow:0px 0px 5px #fff;
+            text-decoration: underline;
+            font-size: 17px;
         }
-        footer
+        footer /* RETÂNGULO RODAPÉ */
         {
             background-color: #0F0E0E;
             height: 80px;
@@ -57,17 +59,7 @@
             display: flex;
             text-align: center;
         }
-        /*
-        p{
-            color: #FFF;
-            font-family: Inter;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px; 
-        }
-        */
-        footer ul{
+        footer ul{ /* MENU DO RODAPÉ */
             list-style: none;
             margin: auto;
             display: flex;
@@ -75,7 +67,7 @@
             align-items: center;
             padding: 0;
         }
-        footer li{
+        footer li{ /* ITENS DO MENU DO RODAPÉ */
             color: white;
             display: inline-flex;
             position: static;
@@ -86,6 +78,15 @@
             font-size: small;
             padding-left: 50px;
             padding-right: 50px;
+        }
+        footer li a{ /* LINK DOS ITENS DO MENU */
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer li a:hover{ /* LINKS DOS ITENS DO MENU QUANDO MOUSE PASSA EM CIMA */
+            color:#fff;
+            text-decoration: underline;
         }
         
     </style>
@@ -101,24 +102,46 @@
             <li> <a href="#"> CARDÁPIO </a> </li>
             <li> <a href="#"> LOCALIZAÇÃO </a> </li>
             <li style="width: 180px"> <a href="#"> FALE CONOSCO </a> </li>
-            <li style="width: 25px; height: auto; padding-left: 15px"> <a href="#"> <img src="InstagramColorido.png" alt="Instagram" style="width: 25px"> </a></li>
-            <li style="width: 25px; height: auto; padding-left: 10px"> <a href="#"> <img src="TwitterColorido.png" alt="Twitter" style="width: 25px"> </a></li>
+            <li style="width: 25px; height: auto; padding-left: 15px"> 
+                <a href="https://www.instagram.com/universidadepositivo/">
+                    <img src="InstagramColorido.png" alt="Instagram" style="width: 25px"> 
+                </a>
+            </li>
+            <li style="width: 25px; height: auto; padding-left: 10px">
+                <a href="https://x.com/univ_positivo?s=20"> 
+                    <img src="TwitterColorido.png" alt="Twitter" style="width: 25px"> 
+                </a>
+            </li>
         </ul>
     </nav>
 
     <footer>
             <ul>
+                <li style="width: 65px; height: 65px; padding: 0">
+                    <img src="Logo.png" alt="Logo" style="width: 65px"> 
+                </li>
+                <li style="font-size: 10px; padding-left: 3px; padding-top: 30px;"> Site do Sushi </li>
                 <li> 
                     <img src="Localizacao.png" alt="Localização" style="width: 25px; height: auto; padding: 5px">
-                    R. Mateus Leme, 990
+                    <a href="https://maps.app.goo.gl/C8HhoXrpvHDFpFnx8"> Praça General Osório, 125 </a>
                 </li>
                 <li> 
-                    <img src="TelefoneBranco.png" alt="EmailIcon" style="width: 25px; height: auto; padding: 5px">
+                    <img src="TelefoneBranco.png" alt="Telefone" style="width: 25px; height: auto; padding: 5px">
                     (41) 3333-3333
                 </li>
                 <li> 
                     <img src="E-mailIcon.png" alt="EmailIcon" style="width: 25px; height: auto; padding: 5px">
-                    sitedesushi@gmail.com
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXDzSGlGWwnNDbSXdZbRfhhqRQGplmzHZgpFBTtdZDVHHzVxNWQHqsGVfXSRJsDcVZJvX"> sitedesushi@gmail.com </a>
+                </li>
+                <li style="width: 25px; padding: 0; padding-left: 150px">
+                    <a href="https://www.instagram.com/universidadepositivo/">
+                        <img src="InstagramBranco.png" alt="Instagram Branco" style="width: 25px; height: auto;"> 
+                    </a>
+                </li>
+                <li style="width: 25px; height: auto; padding-left: 15px; padding-right: 0;">
+                    <a href="https://x.com/univ_positivo?s=20"> 
+                        <img src="TwitterBranco.png" alt="Twitter Branco" style="width: 25px"> 
+                    </a>
                 </li>
             </ul>
     </footer>
