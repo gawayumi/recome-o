@@ -1,112 +1,126 @@
 <html>
 <head>
     <title> SITE DO SUSHI </title>
-    
 </head>
 <body>
     <style>
-        header{
-            background-color: #730A06;
-            widht: 100%;
-            height: 90px;
+        header{ /* FUNDO DO TÍTULO */
+            background-color: #292828;
+            width: 500px; /* delimitando o tamanho do header, delimita a linha */
+            height: 80px;
+            border-bottom-style: solid;
+            border-color: white;
+            margin: auto;
         }
-        h1{
+        header p{ /* TÍTULO */
+            font-family: Arial, Helvetica, sans-serif;
             color: #FFF;
             position: relative;
             top: 50%;
             transform: translateY(-50%); /* COLOCA O TEXTO NO CENTRO VERTICALMENTE */
+            font-size: 30px;
         }
-        body{
+        body{ /* CORPO */
             background-color: #292828;
             margin: 0px;
             text-align: center;
         }
+        .topo ul{ /* MENU INTEIRO */
+            list-style: none;
+            margin-top: 25px;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        .menu li{ /* ITENS DO MENU */
+            color: white;
+            display: inline-block;
+            width: 130px;
+        }
+        .menu li a{
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu li a:hover{
+            background:#333;
+            color:#fff;
+            -moz-box-shadow:0 3px 10px 0 #CCC;
+            text-shadow:0px 0px 5px #fff;
+        }
         footer
         {
             background-color: #0F0E0E;
-            height: 100px;
+            height: 80px;
             width: 100%;
             position: fixed;
             bottom: 0px;
+            display: flex;
             text-align: center;
         }
+        /*
         p{
             color: #FFF;
             font-family: Inter;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
-            line-height: 24px; /* 150% */
+            line-height: 24px; 
         }
+        */
         footer ul{
             list-style: none;
-            padding: 50px;
-            margin: 0;
+            margin: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            padding: 0;
         }
         footer li{
             color: white;
-            display: inline-block;
-            padding-left: 5px;
-            padding-right: 10px;
-            align-content: center;
+            display: inline-flex;
             position: static;
+            text-align: center;
+            align-items: center;
+            position: static;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            padding-left: 50px;
+            padding-right: 50px;
         }
-        ul{
-            list-style: none;
-            padding-top: 30px;
-        }
-        li{
-            color: white;
-            display: inline-block;
-            padding-inline: 60px;
-            position: relative;
-            left: 38px;
-            border-width: 20px;
-        }
-        #Email{
-            display:none;
-        }
-        li a{
-            color: white;
-            text-decoration: none;
-        }
-        li a:hover{
-            background:#333;
-            color:#fff;
-            -moz-box-shadow:0 3px 10px 0 #CCC;
-            text-shadow:0px 0px 5px #fff;
-        }
+        
     </style>
 
     <header>
-        <h1> SITE DO SUSHI </h1>
+        <p> SITE DO SUSHI </p>
     </header>
     
-    <nav>
+    <nav class="topo">
         <ul class="menu">
-            <li> <a href="#"> HOME </a> </li>
-            <li> <a href="#"> SOBRE </a> </li>
+            <li style="width: 90px"> <a href="#"> HOME </a> </li>
+            <li style="width: 90px"> <a href="#"> SOBRE </a> </li>
             <li> <a href="#"> CARDÁPIO </a> </li>
             <li> <a href="#"> LOCALIZAÇÃO </a> </li>
-            <li> <a href="#"> FALE CONOSCO </a> </li>
+            <li style="width: 180px"> <a href="#"> FALE CONOSCO </a> </li>
+            <li style="width: 25px; height: auto; padding-left: 15px"> <a href="#"> <img src="InstagramColorido.png" alt="Instagram" style="width: 25px"> </a></li>
+            <li style="width: 25px; height: auto; padding-left: 10px"> <a href="#"> <img src="TwitterColorido.png" alt="Twitter" style="width: 25px"> </a></li>
         </ul>
     </nav>
 
-    <footer> 
-        <nav>
+    <footer>
             <ul>
-                <li> R. Mateus Leme, 990 </li>
-                <li> (41) 3333-3333 </li>
                 <li> 
-                    <div class="Email">
-                        <img src="c:\Users\Aluno\Downloads\HomePage\E-mailIcon.png" alt="EmailIcon" style="width: 30px; height: auto;">
-                    </div>
+                    <img src="Localizacao.png" alt="Localização" style="width: 25px; height: auto; padding: 5px">
+                    R. Mateus Leme, 990
                 </li>
-                <li> sitedesushi@gmail.com </li>
+                <li> 
+                    <img src="TelefoneBranco.png" alt="EmailIcon" style="width: 25px; height: auto; padding: 5px">
+                    (41) 3333-3333
+                </li>
+                <li> 
+                    <img src="E-mailIcon.png" alt="EmailIcon" style="width: 25px; height: auto; padding: 5px">
+                    sitedesushi@gmail.com
+                </li>
             </ul>
-        </nav>
     </footer>
 </body>
 </html>
-
-<!--https://blog.marcusoliveiradev.com.br/rodape-html-css-pronto/-->
