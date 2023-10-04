@@ -1,96 +1,11 @@
 <html>
 <head>
     <link rel="icon" type="image/x-icon" href="LogoSite.png"> <!-- ícone na guia -->
+    <link rel="stylesheet" href="HomePage.css"> <!-- ícone na guia -->
     <title> SITE DO SUSHI </title> <!-- título na guia -->
 </head>
 
 <body>
-    <style>
-        header{ /* FUNDO DO TÍTULO */
-            background-color: #292828;
-            width: 500px; /* delimitando o tamanho do header, delimita a linha */
-            height: 80px;
-            border-bottom-style: solid;
-            border-color: white;
-            margin: auto;
-        }
-        header p{ /* TÍTULO */
-            font-family: Arial, Helvetica, sans-serif;
-            color: #FFF;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%); /* COLOCA O TEXTO NO CENTRO VERTICALMENTE */
-            font-size: 30px;
-        }
-        body{ /* CORPO */
-            background-color: #292828;
-            margin: 0px;
-            text-align: center;
-        }
-        .topo ul{ /* MENU INTEIRO */
-            list-style: none;
-            margin-top: 25px;
-            padding: 0;
-            margin-bottom: 0;
-        }
-        .menu li{ /* ITENS DO MENU */
-            color: white;
-            display: inline-block;
-            width: 130px;
-        }
-        .menu li a{ /* LINK DOS ITENS */
-            color: white;
-            text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .menu li a:hover{ /* ITEM DO MENU QUANDO PASSA MOUSE EM CIMA */
-            background:#333;
-            color:#fff;
-            text-decoration: underline;
-            font-size: 17px;
-        }
-        footer /* RETÂNGULO RODAPÉ */
-        {
-            background-color: #0F0E0E;
-            height: 80px;
-            width: 100%;
-            position: fixed;
-            bottom: 0px;
-            display: flex;
-            text-align: center;
-        }
-        footer ul{ /* MENU DO RODAPÉ */
-            list-style: none;
-            margin: auto;
-            display: flex;
-            text-align: center;
-            align-items: center;
-            padding: 0;
-        }
-        footer li{ /* ITENS DO MENU DO RODAPÉ */
-            color: white;
-            display: inline-flex;
-            position: static;
-            text-align: center;
-            align-items: center;
-            position: static;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: small;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-        footer li a{ /* LINK DOS ITENS DO MENU */
-            color: white;
-            text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        footer li a:hover{ /* LINKS DOS ITENS DO MENU QUANDO MOUSE PASSA EM CIMA */
-            color:#fff;
-            text-decoration: underline;
-        }
-        
-    </style>
-
     <header>
         <p> SITE DO SUSHI </p>
     </header>
@@ -108,12 +23,43 @@
                 </a>
             </li>
             <li style="width: 25px; height: auto; padding-left: 10px">
-                <a href="https://x.com/univ_positivo?s=20"> 
+                <a href="https://x.com/univ_positivo?s=20">
                     <img src="TwitterColorido.png" alt="Twitter" style="width: 25px"> 
                 </a>
             </li>
         </ul>
     </nav>
+
+    <table class="TableHome">
+        <tr>
+            <td>
+                <img src="sushi-2000239_1920.jpg" alt="Imagem de Sushi" style="width: 500px; margin: 40px">
+            </td>
+            <td>
+                <p class="Texto" style="margin-left: 40px; width: 500px">
+                    Bem-vindo ao Site do Sushi! <br> <br>
+                    É com grande prazer que o convidamos a embarcar em uma jornada
+                    culinária única, onde a tradição japonesa se encontra com a criatividade
+                    moderna. Localizado no coração da cidade, o Sushi Delícias Japonesas é o
+                    destino definitivo para os amantes da gastronomia japonesa. <br> <br>
+                </p>
+                <button class="BotãoCardápio"> <a href="#"> CARDÁPIO </a> </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="Texto" style="margin-left: 40px; width: 500px">
+                    Descubra nossa tentadora seleção de pratos japoneses. Deixe-se levar
+                    por uma jornada culinária única. Explore sabores autênticos e escolha
+                    sua próxima experiência gastronômica.
+                </p>
+                <button class="BotãoReserva"> <a href="#"> RESERVA </a> </button>
+            </td>
+            <td>
+                <img src="sushi-2000239_1920.jpg" alt="Imagem de Sushi" style="width: 500px; margin: 40px;">
+            </td>
+        </tr>
+    </table>
 
     <footer>
             <ul>
